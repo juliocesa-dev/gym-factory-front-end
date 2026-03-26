@@ -97,7 +97,6 @@ export function StarRating({ count = 5 }: { count?: number }) {
 }
 
 // ── Chip ─────────────────────────────────────────────────────────────────────
-// color is dynamic (JS value) so style is intentionally used here
 export function Chip({ children, color }: { children: ReactNode; color: string }) {
   return (
     <span

@@ -9,7 +9,7 @@ export function Hero() {
       <div
         className="absolute inset-0 pointer-events-none opacity-60"
         style={{
-          backgroundImage: "radial-gradient(circle, #222 1px, red 1px)",
+          backgroundImage: "radial-gradient(circle, #222 1px, black 1px)",
           backgroundSize: "40px 40px",
         }}
       />
