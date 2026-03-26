@@ -82,7 +82,7 @@ export function SectionDivider() {
   return (
     <div
       className="h-px mx-6"
-      style={{ background: "linear-gradient(90deg, transparent 0%, #222 20%, #222 80%, transparent 100%)" }}
+      style={{ background: "linear-gradient(90deg, transparent 0%, var(--color-gym-border) 20%, var(--color-gym-border) 80%, transparent 100%)" }}
     />
   );
 }

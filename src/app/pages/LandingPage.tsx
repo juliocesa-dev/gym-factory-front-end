@@ -8,11 +8,14 @@ import { FAQ } from "../components/landing/FAQ";
 import { Contact } from "../components/landing/Contact";
 import { Footer } from "../components/landing/Footer";
 import { SectionDivider } from "../components/landing/primitives";
+import { useTheme } from "@/hooks/useTheme";
 
 export default function LandingPage() {
+  const {theme, setTheme, themes } = useTheme()
+
   return (
     <div className="bg-gym-bg min-h-screen">
-      <Navbar />
+      <Navbar theme={theme} setTheme={setTheme} themes={themes} />
       <Hero />
       <SectionDivider />
       <Modalities />

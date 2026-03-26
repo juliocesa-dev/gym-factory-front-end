@@ -9,7 +9,7 @@ export function Hero() {
       <div
         className="absolute inset-0 pointer-events-none opacity-60"
         style={{
-          backgroundImage: "radial-gradient(circle, #222 1px, black 1px)",
+          backgroundImage: "radial-gradient(circle, var(--color-gym-border) 1px, var(--color-gym-bg) 1px)",
           backgroundSize: "40px 40px",
         }}
       />
@@ -17,13 +17,13 @@ export function Hero() {
       {/* Brand glow — right */}
       <div
         className="absolute top-[15%] -right-[10%] w-175 h-175 rounded-full pointer-events-none animate-glow-pulse"
-        style={{ background: "radial-gradient(circle, #E8FF0014 0%, transparent 65%)" }}
+        style={{ background: "radial-gradient(circle, color-mix(in srgb, var(--color-brand) 8%, transparent) 0%, transparent 65%)" }}
       />
 
       {/* Brand glow — left */}
       <div
         className="absolute bottom-[5%] -left-[15%] w-125 h-125 rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(circle, #E8FF0008 0%, transparent 65%)" }}
+        style={{ background: "radial-gradient(circle, color-mix(in srgb, var(--color-brand) 4%, transparent) 0%, transparent 65%)" }}
       />
 
       <div className="max-w-300 mx-auto px-7 py-20 relative z-10 w-full">
@@ -92,7 +92,7 @@ export function Hero() {
         <span className="text-[10px] text-gym-faint tracking-[0.16em] uppercase">scroll</span>
         <div
           className="w-px h-12 animate-scroll-pulse origin-top"
-          style={{ background: "linear-gradient(#E8FF0080, transparent)" }}
+          style={{ background: "linear-gradient(color-mix(in srgb, var(--color-brand) 50%, transparent), transparent)" }}
         />
       </div>
     </section>

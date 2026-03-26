@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { CONTENT } from "../../../config";
 import { CtaButton } from "./primitives";
+import { Theme } from "@/hooks/useTheme";
 
 const NAV_LINKS = ["Modalidades", "Planos", "Instrutores", "Depoimentos", "FAQ", "Contato"];
 
-export function Navbar() {
+interface NavbarProps {
+  theme: Theme;
+  setTheme: (t: Theme) => void;
+  themes: readonly Theme[];
+}
+
+export function Navbar({theme, setTheme, themes}:NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -51,6 +58,19 @@ export function Navbar() {
             </button>
           ))}
         </div>
+
+          <div className="flex items-center gap-1">
+    {themes.map((t) => (
+      <button
+        key={t}
+        onClick={() => setTheme(t)}
+        className={`w-4 h-4 rounded-full border-2 transition-all ${
+          theme === t ? "border-brand scale-110" : "border-gym-border"
+        }`}
+        style={{ background: t === "default" ? "black" : t === "light" ? "white" : "black" }}
+      />
+    ))}
+  </div>
 
         {/* CTA */}
         <CtaButton

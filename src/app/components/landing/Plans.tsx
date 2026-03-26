@@ -20,7 +20,7 @@ export function Plans() {
               <div
                 className={`relative rounded-2xl p-11 transition-shadow duration-300 ${
                   plan.highlight
-                    ? "bg-[#0f0f0f] border-[1.5px] border-brand scale-[1.04] shadow-[0_0_60px_#E8FF0012]"
+                    ? "bg-gym-surface border-[1.5px] border-brand scale-[1.04] shadow-[0_0_60px_var(--color-brand)/0.07]"
                     : "bg-gym-bg border border-gym-border"
                 }`}
               >

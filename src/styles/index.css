@@ -23,6 +23,17 @@
   --animate-scroll-pulse: scrollPulse 2s ease-in-out infinite;
 }
 
+.light html, html.light{
+  --color-brand:         #00D4FF;
+  --color-brand-dark:    #00A8CC;
+  --color-gym-bg:        #F0F0EB;
+  --color-gym-surface:   #cfcfcf;
+  --color-gym-hover:     #141B20;
+  --color-gym-border:    #1A2530;
+  --color-gym-border-hi: #243545;
+  --color-gym-text:      #0A0A0A;
+}
+
 /* ── Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -38,7 +49,7 @@ body {
   overflow-x: hidden;
 }
 
-::selection { background: #E8FF0030; color: #E8FF00; }
+::selection { background: var(--color-brand); color: var(--color-gym-border); }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0A0A0A; }
