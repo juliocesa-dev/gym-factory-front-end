@@ -6,12 +6,12 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bg-gym-bg py-[120px] px-7">
-      <div className="max-w-[760px] mx-auto">
+    <section id="faq" className="bg-gym-bg py-30 px-7">
+      <div className="max-w-190 mx-auto">
 
         <Reveal>
           <SectionEyebrow>FAQ</SectionEyebrow>
-          <SectionHeading className="!mb-14">Perguntas frequentes.</SectionHeading>
+          <SectionHeading className="mb-14!">Perguntas frequentes.</SectionHeading>
         </Reveal>
 
         <div className="flex flex-col gap-1">

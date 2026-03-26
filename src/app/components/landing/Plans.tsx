@@ -3,8 +3,8 @@ import { CtaButton, Reveal, SectionEyebrow, SectionHeading, SectionSubtitle } fr
 
 export function Plans() {
   return (
-    <section id="planos" className="bg-gym-surface py-[120px] px-7">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="planos" className="bg-gym-surface py-30 px-7">
+      <div className="max-w-300 mx-auto">
 
         <Reveal className="text-center">
           <SectionEyebrow>Planos e Preços</SectionEyebrow>
@@ -60,7 +60,7 @@ export function Plans() {
 
                 {/* CTA */}
                 {plan.highlight ? (
-                  <CtaButton href={`https://wa.me/${CONTENT.gym.whatsapp}`} className="!block !text-center !rounded-lg">
+                  <CtaButton href={`https://wa.me/${CONTENT.gym.whatsapp}`} className="block! text-center! rounded-lg!">
                     {plan.cta}
                   </CtaButton>
                 ) : (

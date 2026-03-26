@@ -3,8 +3,8 @@ import { Reveal, SectionEyebrow, SectionHeading, StarRating } from "./primitives
 
 export function Testimonials() {
   return (
-    <section id="depoimentos" className="bg-gym-surface py-[120px] px-7">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="depoimentos" className="bg-gym-surface py-30 px-7">
+      <div className="max-w-300 mx-auto">
 
         <Reveal>
           <SectionEyebrow>Depoimentos</SectionEyebrow>

@@ -10,8 +10,8 @@ const INFO = [
 
 export function Contact() {
   return (
-    <section id="contato" className="bg-gym-bg px-7 pb-[120px]">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="contato" className="bg-gym-bg px-7 pb-30">
+      <div className="max-w-300 mx-auto">
 
         {/* CTA Banner */}
         <Reveal>
@@ -30,7 +30,7 @@ export function Contact() {
             <CtaButton
               href={`https://wa.me/${CONTENT.gym.whatsapp}`}
               dark
-              className="!whitespace-nowrap !px-10 !py-5 !text-[15px] !rounded-xl"
+              className="whitespace-nowrap! px-10! py-5! text-[15px]! rounded-xl!"
             >
               Agendar no WhatsApp →
             </CtaButton>

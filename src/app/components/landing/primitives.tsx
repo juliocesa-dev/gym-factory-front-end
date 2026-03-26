@@ -45,7 +45,7 @@ export function SectionHeading({ children, className = "" }: { children: ReactNo
 // ── SectionSubtitle ──────────────────────────────────────────────────────────
 export function SectionSubtitle({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
-    <p className={`text-[17px] leading-relaxed text-gym-muted mb-16 max-w-[480px] ${className}`}>
+    <p className={`text-[17px] leading-relaxed text-gym-muted mb-16 max-w-120 ${className}`}>
       {children}
     </p>
   );
