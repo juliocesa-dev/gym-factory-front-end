@@ -60,17 +60,17 @@ export function Navbar({theme, setTheme, themes}:NavbarProps) {
         </div>
 
           <div className="flex items-center gap-1">
-    {themes.map((t) => (
-      <button
-        key={t}
-        onClick={() => setTheme(t)}
-        className={`w-4 h-4 rounded-full border-2 transition-all ${
-          theme === t ? "border-brand scale-110" : "border-gym-border"
-        }`}
-        style={{ background: t === "default" ? "black" : t === "light" ? "white" : "black" }}
-      />
-    ))}
-  </div>
+            {themes.map((t) => (
+              <button
+                key={t}
+                onClick={() => setTheme(t)}
+                className={`w-4 h-4 rounded-full border-2 transition-all ${
+                  theme === t ? "border-brand scale-110" : "border-gym-border"
+                }`}
+                style={{ background: t === "default" ? "black" : t === "light" ? "white" : "black" }}
+              />
+            ))}
+          </div>
 
         {/* CTA */}
         <CtaButton

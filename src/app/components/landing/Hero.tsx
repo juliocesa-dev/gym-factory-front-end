@@ -72,7 +72,7 @@ export function Hero() {
           {CONTENT.stats.map((s, i) => (
             <div
               key={i}
-              className={`pr-8 ${i < CONTENT.stats.length - 1 ? "border-r border-gym-border" : ""}`}
+              className={`pr-8 ${i < CONTENT.stats.length - 1 ? "border-r border-gym-border ml-2" : "ml-2"}`}
             >
               <div className="font-condensed font-black text-gym-text tracking-tight leading-none"
                 style={{ fontSize: "clamp(36px, 4vw, 48px)" }}>
@@ -89,7 +89,6 @@ export function Hero() {
         className="anim-fade-in absolute bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2.5"
         style={{ animationDelay: "1.4s" }}
       >
-        <span className="text-[10px] text-gym-faint tracking-[0.16em] uppercase">scroll</span>
         <div
           className="w-px h-12 animate-scroll-pulse origin-top"
           style={{ background: "linear-gradient(color-mix(in srgb, var(--color-brand) 50%, transparent), transparent)" }}

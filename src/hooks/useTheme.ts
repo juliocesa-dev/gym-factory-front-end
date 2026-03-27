@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const THEMES = ["default", "light"] as const;
+const THEMES = ["default", "light", "secondary"] as const;
 export type Theme = typeof THEMES[number];
 
 export function useTheme(){

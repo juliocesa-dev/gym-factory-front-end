@@ -34,6 +34,17 @@
   --color-gym-text:      #0A0A0A;
 }
 
+.secondary html, html.secondary{
+  --color-brand:         #b81d1d;
+  --color-brand-dark:    #7c1919;
+  --color-gym-bg:        #F0F0EB;
+  --color-gym-surface:   #cfcfcf;
+  --color-gym-hover:     #141B20;
+  --color-gym-border:    #1A2530;
+  --color-gym-border-hi: #243545;
+  --color-gym-text:      #0A0A0A;
+}
+
 /* ── Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
